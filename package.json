@@ -1,11 +1,13 @@
 {
   "name": "pixijs-example",
   "version": "1.0.0",
+  "homepage": "https://dangquochoang96.github.io/BallBlastPixi/",
   "description": "This is the basic setup for the project running with PixiJS",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --env env=dev --open",
     "build": "webpack --env env=preview",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "author": "Purative",
